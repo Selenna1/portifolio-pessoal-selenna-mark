@@ -1,0 +1,184 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    background-color:#fed0bb ;
+}
+
+.container{
+    display: grid;
+}
+
+header{
+    grid-column-start: 1;
+    grid-column-end: 12;
+    background-color: #591B3D;
+}
+/* titulo*/
+.htopo{
+    color: #fed0bb;
+    text-shadow: 1px 1px 3px #FCB9B2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+/* minha imagem config*/
+.container_img{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    max-width:400px;
+    max-height:250px;
+    border-radius: 50%;
+    margin-top: 20px;
+    position:relative;
+}
+    
+a {text-decoration: none;}
+
+.menuSuperior{
+    list-style-type: none;
+    grid-column-start: 6;
+    grid-column-end: 12;
+    justify-content: center;/*centraliza o menu*/
+    gap: 20px;
+}
+
+.s{
+    float:inline-end;
+    
+}
+
+.s a{
+    display: flexbox;
+    color:#fed0bb;
+    padding: 0px 6px;
+    text-shadow: 2px 2px 4px #FCB9B2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.s a:hover{
+    background-color:#FED0BB;
+    color: black;
+}
+/* rodapé das paginas*/
+footer {
+    color: #591B3D;
+    float: inline;
+    grid-column-start: 1;
+    grid-column-end: 12;
+    text-shadow: 1px 1px 2px #FCB9B2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 25%;
+}
+
+.textoSobreMim{
+    grid-column-start: 8;
+    grid-column-end: 12;
+    padding-left: 45px;
+    padding-right: 45px;
+    text-align: justify;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    background-color:#FCB9B2;
+}
+/* usado em quase todas as paginas */
+@media only screen and (max-width: 767px) {
+    .wrapper {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        width: 100%;
+
+    }
+}
+.bola{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    max-width:20px;
+    max-height:20px;
+    border-radius: 50%;
+}
+li{
+    color: #FED0BB;
+}
+
+/* estilo contato*/
+.formulario{
+    grid-column-start: 6;
+    grid-column-end: 10;
+    padding-left: 45px;
+    padding-right: 45px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    background-color:#FCB9B2;
+    color: #591B3D;
+}
+/* estilo da pagina de contato*/
+.contato{
+    grid-column-start: 8;
+    grid-column-end: 9;
+    padding-left: 45px;
+    padding-right: 45px;
+    text-align:center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+.descricaoFormacao{
+    grid-column-start: 1;
+    grid-column-end: 7;
+    padding-left: 45px;
+    padding-right: 45px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    background-color:#FCB9B2;
+    color: #591B3D;
+    
+    
+}
+.formacao{
+    grid-column-start: 1;
+    grid-column-end: 12;
+    padding-left: 45px;
+    padding-right: 45px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+/* divs do portifolio*/
+.div1{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    width: auto;
+    height: auto;
+    padding-left:20px ;
+    color: #591B3D;
+    text-align: justify;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.div2{
+    grid-column-start: 7;
+    grid-column-end: 12;
+    width: auto;
+    height: auto;
+    position: relative;
+    color: #591B3D;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.tamanho{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    max-width:600px;
+    max-height:350px;
+    border-radius: 5%;
+    margin-top: 20px;
+    position:relative;
+}
+
+#cor{
+    background-color: #FCB9B2
+}
